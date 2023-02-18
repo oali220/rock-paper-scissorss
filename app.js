@@ -1,4 +1,3 @@
-
 let Rock;
 let Paper;
 let Scissors;
@@ -58,4 +57,5 @@ function findWinner(playerChoice, computerChoice) {
         return "Player wins!"
 }
 
+// Run the game
 console.log(findWinner(getPlayerChoice(), getComputerChoice()));
