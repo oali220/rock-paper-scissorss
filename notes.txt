@@ -1,0 +1,4 @@
+
+gameDiv -> text for player choice, computer choice, result
+	-> roch paper scissors options
+	-> const document.querySelector for player, computer, result, chroices
