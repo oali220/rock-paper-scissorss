@@ -1,3 +1,6 @@
+
+
+
 let Rock;
 let Paper;
 let Scissors;
@@ -57,5 +60,29 @@ function findWinner(playerChoice, computerChoice) {
         return "Player wins!"
 }
 
-// Run the game
-console.log(findWinner(getPlayerChoice(), getComputerChoice()));
+
+function game() {
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for (var i = 0; i < 5; i++) {
+        let playerSelection = getPlayerChoice();
+        let computerSelection = getComputerChoice();
+        if (findWinner(playerSelection, computerSelection) == "Player wins!") {
+            playerScore++
+        } 
+        else if (findWinner(playerSelection, computerSelection) == "Computer wins!") {
+            computerScore++
+        }
+    }
+
+    if (playerScore > computerScore) {
+        return "Player wins!"
+    }
+    else (computerScore > playerScore) {
+        return "Computer wins!"
+    }
+
+}
+
+console.log(game());
